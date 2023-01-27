@@ -1,0 +1,2 @@
+nasm -f bin main.asm -o main.bin
+qemu-system-i386 -nographic -display curses -hda main.bin

@@ -1,0 +1,13 @@
+nasm command:
+	nasm -f bin <asm file> -o <output bin file>
+
+If using QEMU on a terminal with no GUI, ncurses is used.
+	qemu-system-i386 -nographic -display curses -hda <bin file>
+
+
+During emulation, the following keys are useful:
+ctrl-alt-f      toggle full screen
+ctrl-alt-n      switch to virtual console 'n'
+ctrl-alt        toggle mouse and keyboard grab
+
+When using -nographic, press 'ctrl-a h' to get some help.
